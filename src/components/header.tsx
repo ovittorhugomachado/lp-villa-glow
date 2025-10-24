@@ -36,7 +36,7 @@ export const Header = () => {
                 <button className="absolute top-5 right-4" onClick={() => setOpenMenu(false)}>
                     <IoMdClose className="text-white text-3xl " />
                 </button>
-                <a className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#ff00d4] text-bartex">Ingressos</a>
+                <a className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-bartex">Ingressos</a>
                 <ul className="flex flex-col gap-1 items-start font-semibold text-white pl-2 pt-3">
                     <li onClick={() => handleScroll("first-fold")} className="cursor-pointer">Experiência</li>
                     <li onClick={() => handleScroll("second-fold")} className="cursor-pointer">Informações</li>
