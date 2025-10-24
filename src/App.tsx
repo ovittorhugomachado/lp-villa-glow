@@ -18,12 +18,12 @@ function App() {
             </section>
             <section id="first-fold" className="w-screen relative">
                 <div className=" min-h-32 bg-[#00CB01] flex flex-col justify-center items-center">
-                    <h4 className="text-[21px sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
+                    <h4 style={{fontSize: "31px", fontFamily: "bartex-regular"}} className=" sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
                 </div>
                 <div className="relative w-screen min-h-96 bg-[#030332] flex justify-center items-center">
                     <img src="/10.png" alt="" className="absolute opacity-30" />
-                    <img src="/logo-villa-lobos.png" alt="" className="absolute w-40 top-11" />
-                    <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-8 z-80">Neste Natal, o Shopping VillaLobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
+                    <img src="/logo-villa-lobos.png" alt="" className="absolute w-40 top-7 md:top-11" />
+                    <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-12 md:py-8 z-80">Neste Natal, o Shopping VillaLobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
                     <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" />
                     <img src="/3.png" alt="" className="hidden md:block absolute left-0 -bottom-40" />
                 </div>
@@ -52,7 +52,7 @@ function App() {
                     <a
                         href="https://maps.google.com/?q=Av.+Dra.+Ruth+Cardoso,+4777+-+Jardim+Universidade+Pinheiros,+São+Paulo+-+SP,+05477-000"
                         target="_blank"
-                        className="bg-[#ff00d4] flex justify-center hover:bg-[#ff00d4] mt-6 mb-4 text-white font-bold py-2 px-4 rounded transition-colors duration-200"
+                        className="bg-[#ff00d4] flex justify-center hover:bg-[#ff00d4] mt-6 mb-4 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200"
                     >
                         Como chegar
                     </a>

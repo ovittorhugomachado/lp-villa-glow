@@ -7,14 +7,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'bartex-regular';
+  src: url('./assets/fonts/Bartex-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
  font-family: "Barlow", sans-serif;
 }
 
 h1,
 h2,
-h3 {
-  font-family: 'bartex', sans-serif;
+h3{
+  font-family: 'bartex-regular', sans-serif;
 }
 
 li, button, a {
