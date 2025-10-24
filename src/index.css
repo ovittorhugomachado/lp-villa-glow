@@ -15,16 +15,18 @@
 }
 
 * {
- font-family: "Barlow", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 h1,
 h2,
-h3{
+h3 {
   font-family: 'bartex-regular', sans-serif;
 }
 
-li, button, a {
+li,
+button,
+a {
   cursor: pointer;
 }
 
@@ -47,6 +49,18 @@ a:hover {
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+#text-hero {
+  font-family: "bartex-regular";
+  font-size: 31px;
+}
+
+@media (max-width: 640px) {
+  #text-hero {
+    font-family: "bartex-regular";
+    font-size: 24px;
+  }
 }
 
 /* Breakpoint para telas maiores que 640px */
