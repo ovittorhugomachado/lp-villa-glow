@@ -23,7 +23,7 @@ function App() {
                 <div className="relative w-screen min-h-106 flex justify-center items-center">
                     <img src="/10.png" alt="" className="absolute opacity-30" />
                     <img src="/logo-villa-lobos.png" alt="" className="absolute w-40 top-7 md:top-11" />
-                    <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-12 md:py-8 z-80">Neste Natal, o Shopping VillaLobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
+                    <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-12 md:py-8 z-80">Neste Natal, o Shopping Villa Lobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
                     {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
                     {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
                 </div>
