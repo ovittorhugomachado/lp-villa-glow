@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'bartex';
+  src: url('./assets/fonts/bartex.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+ font-family: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'bartex', sans-serif;
+}
+
+li, button, a {
+  cursor: pointer;
+}
+
+li:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+#hero-fold {
+  background-image: url('/bg-first-fold-mobile.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Breakpoint para telas maiores que 640px */
+@media (min-width: 640px) {
+  #hero-fold {
+    background-image: url('/bg-first-fold-tablet.png');
+  }
+}
+
+/* Breakpoint para telas maiores que 1024px */
+@media (min-width: 1024px) {
+  #hero-fold {
+    background-image: url('/bg-first-fold-desktop.png');
+  }
+}
+
+/* Breakpoint para telas maiores que 1440px */
+@media (min-width: 1440px) {
+  #hero-fold {
+    background-image: url('/bg-first-fold-large-desktop.png');
+  }
+}
