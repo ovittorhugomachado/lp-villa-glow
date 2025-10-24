@@ -1,7 +1,14 @@
 import { Header } from "./components/header"
 
 function App() {
-
+    document.addEventListener("DOMContentLoaded", () => {
+        const video = document.querySelector("video");
+        if (video) {
+            video.muted = true; // Garante que o vídeo esteja sem som
+            video.playsInline = true; // Garante que o vídeo não entre em tela cheia
+            video.play().catch((err) => console.log("Autoplay falhou:", err));
+        }
+    });
     return (
         <>
             <Header />
@@ -9,6 +16,7 @@ function App() {
                 <video
                     autoPlay
                     loop
+                    preload="auto"
                     muted
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -50,6 +58,7 @@ function App() {
                     autoPlay
                     loop
                     muted
+                    preload="auto"
                     playsInline
                     className="translate-y-8"
                 >
@@ -62,6 +71,7 @@ function App() {
                     autoPlay
                     loop
                     muted
+                    preload="auto"
                     playsInline
                     className="relative w-full lg:h-full max-w-md h-160 z-10 object-cover md:ml-0"
                 >
@@ -92,6 +102,7 @@ function App() {
                     loop
                     muted
                     playsInline
+                    preload="auto"
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
                 >
                     <source src="/video-fold-2.mp4" type="video/mp4" />
