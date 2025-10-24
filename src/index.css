@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: 'avenir';
+  src: url('./assets/fonts/Avenir.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'bartex-regular';
   src: url('./assets/fonts/Bartex-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -15,7 +22,7 @@
 }
 
 * {
-  font-family: "Barlow", sans-serif;
+  font-family: "avenir", sans-serif;
 }
 
 h1,
@@ -40,7 +47,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-#hero-fold {
+/* #hero-fold {
   background-image: url('/bg-first-fold-mobile.png');
   background-size: cover;
   background-position: right;
@@ -49,7 +56,7 @@ a:hover {
   height: 100vh;
   margin: 0;
   padding: 0;
-}
+} */
 
 #text-hero {
   font-size: 25px;
@@ -62,22 +69,22 @@ a:hover {
 }
 
 /* Breakpoint para telas maiores que 640px */
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   #hero-fold {
     background-image: url('/bg-first-fold-tablet.png');
   }
 }
 
 /* Breakpoint para telas maiores que 1024px */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero-fold {
     background-image: url('/bg-first-fold-desktop.png');
   }
-}
+} */
 
 /* Breakpoint para telas maiores que 1440px */
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   #hero-fold {
     background-image: url('/bg-first-fold-large-desktop.png');
   }
-}
+} */

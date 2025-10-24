@@ -5,54 +5,67 @@ function App() {
     return (
         <>
             <Header />
-            <section id="hero-fold" className="w-screen min-h-screen flex items-center justify-center sm:justify-start">
-                <div className="flex flex-col items-center px-8 lg:pl-36 lg:scale-130">
+            <section id="hero-fold" className="w-screen bg-black/50 shadow-2xl min-h-screen relative flex items-center justify-center">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+                >
+                    <source src="/hero-desktop.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div className="flex flex-col items-center px-8 lg:scale-130 z-10">
                     <img src="/logo-villa-lobos.png" alt="logo-villa-lobos" className="w-30" />
                     <h1 className="text-7xl whitespace-nowrap text-[#C3973B]">Villa Glow</h1>
                     <h4 className="text-white text-2xl">Pintando no escuro</h4>
                     <img src="/sublinhado.png" alt="sublinhado" className="w-25" />
-                    <h6 className="text-white text-center shadow-2xl shadow-black/50">Uma <span className="font-bold">experiência brilhante</span ><br /> para <span className="font-bold">toda a família</span></h6>
+                    <h6 className="text-white text-center">
+                        Uma <span className="font-bold">experiência brilhante</span>
+                        <br /> para <span className="font-bold">toda a família</span>
+                    </h6>
                     <p className="text-[#C3973B] text-center font-bold">20/11 a 24/12 - Piso 3</p>
-                    <a className="px-8 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-center mt-4">Quero participar <br className="md:hidden" /> do Villa Glow</a>
+                    <a className="px-8 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-center mt-4">
+                        Quero participar <br className="md:hidden" /> do Villa Glow
+                    </a>
                 </div>
             </section>
-            <section id="first-fold" className="w-screen relative bg-gradient-to-b from-[#030332] to-[#010127]">
-                <div className=" min-h-32 bg-[#C3973B] flex flex-col justify-center items-center">
-                    <h4 id="text-hero" className=" sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
-                </div>
-                <div className="relative w-screen min-h-106 flex justify-center items-center">
+            <div id="first-fold" className=" min-h-32 bg-[#C3973B] flex flex-col justify-center items-center">
+                <h4 id="text-hero" className=" sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
+            </div>
+            <section className="overflow-hidden w-screen flex flex-col relative bg-gradient-to-b from-[#030332] to-[#010127]">
+                <div className="relative w-screen min-h-76 pt-12 flex justify-center items-center">
                     <img src="/10.png" alt="" className="absolute opacity-30" />
                     <img src="/logo-villa-lobos.png" alt="" className="absolute w-40 top-7 md:top-11" />
                     <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-12 md:py-8 z-80">Neste Natal, o Shopping Villa Lobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
                     {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
                     {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
                 </div>
-                <div className="relative w-screen min-h-96 px-8  flex flex-col md:flex-row justify-center items-center">
-                    <img src="/10.png" alt="" className="absolute opacity-40 translate-x-150" />
-                    <div className="w-full max-w-126 mb-8 h-76 mx-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
-                        <p className="text-white">Foto</p>
-                    </div>
-                    {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
-                    {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
-            
-                    <img src="/10.png" alt="" className="absolute opacity-40 -translate-x-150 z-0" />
-                    <div className="w-full max-w-126 h-76 mx-8 mb-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
-                        <p className="text-white">Foto</p>
-                    </div>
-                    <img src="/10.png" alt="" className="absolute opacity-40 -translate-x-150 z-0" />
-                    <div className="w-full max-w-126 h-76 mx-8 mb-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
-                        <p className="text-white">Foto</p>
-                    </div>
-                    {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
-                    {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
-                </div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="translate-y-8"
+                >
+                    <source src="/video-menina-desenhando.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
             </section>
-            <section id="second-fold" className="w-screen relative pb-36 pt-26 flex flex-col lg:flex-row justify-center lg:justify-start items-center px-8 bg-[#C3973B]">
-                <img src="/9.png" alt="" className="absolute w-300 opacity-50 -left-10 z-0" />
-                <div className="w-full max-w-126 h-76 mx-6 bg-white border-2 border-black flex items-center justify-center z-50">
-                    <p>Foto</p>
-                </div>
-                <div className="w-full max-w-136 md:px-8 z-50">
+            <section id="second-fold" className="w-screen overflow-hidden h-300 bg-[#C3973B] md:h-250 py-12 md:py-0 relative flex flex-col lg:flex-row justify-center lg:justify-start items-center">
+            
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="relative w-full lg:h-full max-w-md h-160 z-10 object-cover md:ml-0"
+                >
+                    <source src="/foto-mulher-desenhando.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div className="w-full h-full flex flex-col gap-3 max-w-136 px-4 lg:pt-36 lg:ml-18 pt-10 text-center md:text-start md:px-8 z-50">
                     <h4 className="text-3xl font-bold">20 de novembro</h4>
                     <h4 className="text-3xl font-bold">à 24 de dezembro</h4>
                     <p className="text-2xl mb-6 mt-2">Venha viver a arte, o brilho e a magia do Natal no Shopping Villa Lobos. </p>
@@ -60,11 +73,32 @@ function App() {
                     <h4 className="text-[18px] md:text-[21px] font-bold">- Sujeita à lotação</h4>
                     <h4 className="text-[18px] md:text-[21px] font-bold">- Para todas as idades</h4>
                     <img src="/6.png" alt="" className="hidden md:block absolute right-0 -top-40" />
-                    <a className="px-8 py-4 absolute bottom-32 lg:bottom-42 rounded-full text-lg font-semibold translate-y-20 mt-6 text-white bg-[#030332] text-center ">Quero participar do Villa Glow</a>
+                    <a className="px-3 py-4 rounded-full text-lg font-semibold  mt-9 text-white bg-[#030332] text-center ">Quero participar do Villa Glow</a>
+                </div>
+                <div className="w-full h-10 bg-[#030332] absolute bottom-0 z-50"></div>
+            </section>
+            <section id="hero-fold" className="w-screen bg-black/50 shadow-2xl min-h-screen relative flex items-center justify-center">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+                >
+                    <source src="/video-fold-2.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div className="flex flex-col items-center px-8 lg:scale-130 z-10">
+                    <img src="/logo-villa-lobos.png" alt="logo-villa-lobos" className="w-30" />
+                    <h1 className="text-7xl whitespace-nowrap text-[#C3973B]">Villa Glow</h1>
+                    <h4 className="text-white text-2xl">Pintando no escuro</h4>
+                    <img src="/sublinhado.png" alt="sublinhado" className="w-25" />
+                    <a className="px-8 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-center mt-4">
+                        Quero participar <br className="md:hidden" /> do Villa Glow
+                    </a>
                 </div>
             </section>
             <section id="third-fold" className="w-screen relative flex flex-col md:flex-row justify-center lg:justify-end px-8 py-24 items-center bg-[#030332]">
-                <img src="/10.png" alt="" className="absolute w-300 -right-10 z-0 opacity-40" />
                 <div className="md:mr-6 text-white z-50">
                     <h4 className="text-[28px] font-extrabold text-center md:text-end">Localização</h4>
                     <h5 className="text-[21px] font-bold text-center md:text-end">Shopping Villa Lobos <br />Piso 3</h5>
