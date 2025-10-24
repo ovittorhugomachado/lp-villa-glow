@@ -57,8 +57,8 @@ function App() {
                     <h4 className="text-3xl font-bold">à 24 de dezembro</h4>
                     <p className="text-2xl mb-6 mt-2">Venha viver a arte, o brilho e a magia do Natal no Shopping Villa Lobos. </p>
                     <h4 className="text-[18px] md:text-[21px] font-bold">- R$ 130,00 (inteira) / 65,00 (meia entrada)</h4>
-                    <h4 className="text-[21px] font-bold">- Sujeita à lotação</h4>
-                    <h4 className="text-[21px] font-bold">- Para todas as idades</h4>
+                    <h4 className="text-[18px] md:text-[21px] font-bold">- Sujeita à lotação</h4>
+                    <h4 className="text-[18px] md:text-[21px] font-bold">- Para todas as idades</h4>
                     <img src="/6.png" alt="" className="hidden md:block absolute right-0 -top-40" />
                     <a className="px-8 py-4 absolute bottom-32 lg:bottom-42 rounded-full text-lg font-semibold translate-y-20 mt-6 text-white bg-[#030332] text-center ">Quero participar do Villa Glow</a>
                 </div>
