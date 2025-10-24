@@ -29,21 +29,18 @@ function App() {
                 </div>
                 <div className="relative w-screen min-h-96 px-8  flex flex-col md:flex-row justify-center items-center">
                     <img src="/10.png" alt="" className="absolute opacity-40 translate-x-150" />
-                    <div className="w-full max-w-126 h-76 mx-8 md:-rotate-2 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
+                    <div className="w-full max-w-126 mb-8 h-76 mx-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
                         <p className="text-white">Foto</p>
-                    </div>
-                    <div>
-                        <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center  px-8 py-12 md:py-8 z-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ea voluptatum temporibus itaque provident voluptate? Iure dolores adipisci obcaecati accusamus, ducimus corporis ipsam, reprehenderit quas suscipit, cupiditate autem nam qui.</p>
                     </div>
                     {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
                     {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
-                </div>
-                <div className="relative w-screen min-h-96 px-8 flex flex-col-reverse md:flex-row justify-center items-center">
-                    <div className="z-80">
-                        <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-8 py-12 md:py-8 z-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat rerum, est debitis enim aspernatur molestiae corrupti mollitia nisi at facilis similique ea, sit sapiente, sunt quos assumenda impedit rem.</p>
+            
+                    <img src="/10.png" alt="" className="absolute opacity-40 -translate-x-150 z-0" />
+                    <div className="w-full max-w-126 h-76 mx-8 mb-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
+                        <p className="text-white">Foto</p>
                     </div>
                     <img src="/10.png" alt="" className="absolute opacity-40 -translate-x-150 z-0" />
-                    <div className="w-full max-w-126 h-76 mx-8 md:rotate-2 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
+                    <div className="w-full max-w-126 h-76 mx-8 mb-8 bg-[#030332] border-6 border-[#C3973B] flex items-center justify-center z-50">
                         <p className="text-white">Foto</p>
                     </div>
                     {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
