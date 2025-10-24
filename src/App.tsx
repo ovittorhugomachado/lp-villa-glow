@@ -211,6 +211,7 @@ function App() {
                     muted
                     playsInline
                     webkit-playsinline="true"
+                    controlsList="nodownload"
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
                 >
                     <source src="/hero-desktop.mp4" type="video/mp4" />
@@ -251,6 +252,7 @@ function App() {
                     preload="auto"
                     playsInline
                     webkit-playsinline="true"
+                    controlsList="nodownload"
                     className="translate-y-8"
                 >
                     <source src="/video-menina-desenhando.mp4" type="video/mp4" />
@@ -265,6 +267,7 @@ function App() {
                     preload="auto"
                     playsInline
                     webkit-playsinline="true"
+                    controlsList="nodownload"
                     className="relative w-full lg:h-full max-w-md h-160 z-10 object-cover md:ml-0"
                 >
                     <source src="/foto-mulher-desenhando.mp4" type="video/mp4" />
@@ -296,6 +299,7 @@ function App() {
                     playsInline
                     webkit-playsinline="true"
                     preload="auto"
+                    controlsList="nodownload"
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
                 >
                     <source src="/video-fold-2.mp4" type="video/mp4" />
