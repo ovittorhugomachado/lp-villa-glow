@@ -18,7 +18,7 @@ function App() {
             </section>
             <section id="first-fold" className="w-screen relative border-t-2 border-[#04CFBE]">
                 <div className=" min-h-32 bg-[#04CFBE] flex flex-col justify-center items-center">
-                    <h4 style={{fontSize: "31px", fontFamily: "bartex-regular" }} className=" sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
+                    <h4 style={{ fontSize: "31px", fontFamily: "bartex-regular" }} className=" sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
                 </div>
                 <div className="relative w-screen min-h-106 bg-[#030332] flex justify-center items-center">
                     <img src="/10.png" alt="" className="absolute opacity-30" />
@@ -27,8 +27,32 @@ function App() {
                     {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
                     {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
                 </div>
+                <div className="relative w-screen min-h-96 px-8 bg-[#030332] flex flex-col md:flex-row justify-center items-center">
+                    <img src="/10.png" alt="" className="absolute opacity-40 translate-x-150" />
+                    <div className="w-full max-w-126 h-76 mx-8 md:-rotate-2 bg-[#030332] border-6 border-[#04CFBE] flex items-center justify-center z-50">
+                        <p className="text-white">Foto</p>
+                    </div>
+                    <div>
+
+                        <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center  px-8 py-12 md:py-8 z-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ea voluptatum temporibus itaque provident voluptate? Iure dolores adipisci obcaecati accusamus, ducimus corporis ipsam, reprehenderit quas suscipit, cupiditate autem nam qui.</p>
+                    </div>
+                    {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
+                    {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
+                </div>
+                <div className="relative w-screen min-h-96 px-8 bg-[#030332] flex flex-col md:flex-row justify-center items-center">
+                    <div>
+                        <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-8 py-12 md:py-8 z-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat rerum, est debitis enim aspernatur molestiae corrupti mollitia nisi at facilis similique ea, sit sapiente, sunt quos assumenda impedit rem.</p>
+                    </div>
+                    <img src="/10.png" alt="" className="absolute opacity-40 -translate-x-150" />
+                    <div className="w-full max-w-126 h-76 mx-8 md:rotate-2 bg-[#030332] border-6 border-[#04CFBE] flex items-center justify-center z-50">
+                        <p className="text-white">Foto</p>
+                    </div>
+                    {/* <img src="/2.png" alt="" className="hidden md:block absolute -right-50 -top-27" /> */}
+                    {/* <img src="/3.png" alt="" className="hidden md:block absolute -left-20 -bottom-80" /> */}
+                </div>
+
             </section>
-            <section  id="second-fold" className="w-screen relative pb-36 pt-26 flex flex-col lg:flex-row justify-center lg:justify-start items-center px-8 bg-[#04CFBE]">
+            <section id="second-fold" className="w-screen relative pb-36 pt-26 flex flex-col lg:flex-row justify-center lg:justify-start items-center px-8 bg-[#04CFBE]">
                 <img src="/9.png" alt="" className="absolute w-300 opacity-50 -left-10 z-0" />
                 <div className="w-full max-w-126 h-76 mx-6 bg-white border-2 border-black flex items-center justify-center z-50">
                     <p>Foto</p>
