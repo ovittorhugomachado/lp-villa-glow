@@ -19,7 +19,7 @@ export const Header = () => {
                 <h3 className="text-white translate-x-1">Pintando no escuro</h3>
             </div>
             <div className="flex items-center gap-2">
-                <a className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#ff00d4] text-bartex">Ingressos</a>
+                <a className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#04CFBE] text-bartex">Ingressos</a>
                 <button className="md:hidden" onClick={() => setOpenMenu(true)}>
                     <HiOutlineMenuAlt2 className="text-white text-3xl" />
                 </button>
