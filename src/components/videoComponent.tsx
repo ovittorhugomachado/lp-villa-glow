@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 interface VideoComponentProps {
-    src: string; // Caminho do vídeo
-    poster: string; // Caminho da imagem de pré-carregamento
-    className?: string; // Classes adicionais para estilização
+    src: string;
+    poster: string; 
+    className?: string; 
 }
 
 export const VideoComponent: React.FC<VideoComponentProps> = ({ src, poster, className }) => {
@@ -25,7 +25,6 @@ export const VideoComponent: React.FC<VideoComponentProps> = ({ src, poster, cla
             } catch (err) {
                 console.log("Autoplay falhou:", err);
 
-                // Fallback: tenta dar play ao primeiro toque
                 const playOnInteraction = () => {
                     video.play().catch((e) => console.log("Play após interação falhou:", e));
                     document.removeEventListener("touchstart", playOnInteraction);
@@ -36,7 +35,6 @@ export const VideoComponent: React.FC<VideoComponentProps> = ({ src, poster, cla
             }
         };
 
-        // Quando o vídeo carrega os metadados (frame inicial disponível)
         const handleLoadedData = () => {
             setLoaded(true);
             tryPlay();
@@ -51,16 +49,14 @@ export const VideoComponent: React.FC<VideoComponentProps> = ({ src, poster, cla
 
     return (
         <div className={` ${className || ""}`}>
-            {/* Exibe a imagem enquanto o vídeo não está carregado */}
             {!loaded && (
                 <img
                     src={poster}
                     alt="Pré-carregamento do vídeo"
-                    className="absolute top-0 left-0 w-full h-full object-cover z-10 transition-opacity duration-300"
+                    loading="eager"
+                    className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-300"
                 />
             )}
-
-            {/* Vídeo */}
             <video
                 ref={videoRef}
                 autoPlay
