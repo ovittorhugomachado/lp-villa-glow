@@ -1,5 +1,7 @@
 # Landing Page Vila Glow 
 
+Página oficial: https://www.villaglow.com.br/
+
 ## Sobre o Projeto
 
 O **Vila Glow** é uma experiência interativa de natal, criada para o **Shopping VillaLobos** em parceria com a agência Limão ou Limonada.  
