@@ -38,13 +38,13 @@ export const Header = () => {
                     </ul>
                 </nav>
             </div>
-            {openMenu && <div className="w-screen h-screen top-0 left-0 fixed bg-black/50" />}
-            <nav className={`${openMenu ? '' : 'translate-x-50'} w-[180px] h-screen pt-5 px-3 bg-[#0A0533] fixed top-0 right-0 transition-all duration-500`}>
+            {openMenu && <div className="w-screen md:hidden h-screen top-0 left-0 fixed bg-black/50" />}
+            <nav className={`${openMenu ? '' : 'translate-x-50'} w-[180px] md:hidden h-screen pt-5 px-3 bg-[#0A0533] fixed top-0 right-0 transition-all duration-500`}>
                 <button className="absolute top-5 right-4" onClick={() => setOpenMenu(false)}>
                     <IoMdClose className="text-white text-3xl " />
                 </button>
                 <a className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-bartex">Ingressos</a>
-                <ul className="flex flex-col gap-1 items-start font-semibold text-white pl-2 pt-3">
+                <ul className="flex flex-col gap-4 items-start font-semibold text-white pl-2 pt-6">
                     <li onClick={() => handleScroll("first-fold")} className="cursor-pointer">Experiência</li>
                     <li onClick={() => handleScroll("second-fold")} className="cursor-pointer">Informações</li>
                     <li onClick={() => handleScroll("third-fold")} className="cursor-pointer">Localização</li>

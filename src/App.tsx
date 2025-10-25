@@ -48,7 +48,7 @@ function App() {
                 <VideoComponent
                     src="/videos/video-mulher-desenhando.mp4"
                     poster="/images/poster-mulher-desenhando.png"
-                    className="relative w-full lg:h-full max-w-md h-160 z-10 object-cover md:ml-0"
+                    className="relative w-full lg:h-full max-w-md h-250 z-10 object-cover md:ml-0"
                 />
                 <div className="w-full h-full flex flex-col gap-3 max-w-136 px-4 lg:pt-36 lg:ml-18 pt-10 text-center md:text-start md:px-8 z-50">
                     <h4 className="text-3xl font-bold">20 de novembro</h4>
