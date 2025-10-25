@@ -85,7 +85,7 @@
 //                     <h4 className="text-[18px] md:text-[21px] font-bold">- R$ 130,00 (inteira) / 65,00 (meia entrada)</h4>
 //                     <h4 className="text-[18px] md:text-[21px] font-bold">- Sujeita à lotação</h4>
 //                     <h4 className="text-[18px] md:text-[21px] font-bold">- Para todas as idades</h4>
-//                     <img src="/6.png" alt="" className="hidden md:block absolute right-0 -top-40" />
+//                     <img src="/respingo-azul.png" alt="" className="hidden md:block absolute right-0 -top-40" />
 //                     <a
 //                         target="_blank"
 //                         href="https://www.sympla.com.br/evento/villa-glow-pintando-no-escuro/3187225?_gl=1*1k6tqsb*_gcl_au*OTkwMzcyMzkzLjE3NjEyNTU3NDMuMTQwNzU4MzAwNS4xNzYxMzI4NTE0LjE3NjEzMjg2MDk.*_ga*MTQ5MTg4MDgyOC4xNzYxMjU1NzQ0*_ga_KXH10SQTZF*czE3NjEzMjcwMDMkbzUkZzEkdDE3NjEzMjg5ODMkajI2JGwwJGgxNDY0MTM3ODMz"
@@ -156,67 +156,60 @@
 
 
 import { Header } from "./components/header"
-import { useEffect } from "react"
+//import { useEffect } from "react"
+import { VideoComponent } from "./components/videoComponent"
 
 function App() {
-    useEffect(() => {
-        const initVideos = async () => {
-            const videos = document.querySelectorAll("video");
-            
-            for (const video of videos) {
-                try {
-                    // Configurações essenciais para iOS
-                    video.muted = true;
-                    video.playsInline = true;
-                    video.setAttribute('webkit-playsinline', 'true');
-                    video.setAttribute('playsinline', 'true');
-                    
-                    // Tenta dar play
-                    await video.play();
-                } catch (err) {
-                    console.log("Autoplay falhou:", err);
-                    
-                    // Fallback: tenta play na primeira interação do usuário
-                    const playOnInteraction = () => {
-                        video.play().catch(e => console.log("Play após interação falhou:", e));
-                        document.removeEventListener('touchstart', playOnInteraction);
-                        document.removeEventListener('click', playOnInteraction);
-                    };
-                    
-                    document.addEventListener('touchstart', playOnInteraction, { once: true });
-                    document.addEventListener('click', playOnInteraction, { once: true });
-                }
-            }
-        };
+    // useEffect(() => {
+    //     const initVideos = async () => {
+    //         const videos = document.querySelectorAll("video");
 
-        // Tenta inicializar os vídeos
-        initVideos();
+    //         for (const video of videos) {
+    //             try {
+    //                 // Configurações essenciais para iOS
+    //                 video.muted = true;
+    //                 video.playsInline = true;
+    //                 video.setAttribute('webkit-playsinline', 'true');
+    //                 video.setAttribute('playsinline', 'true');
 
-        // Fallback adicional para quando a página terminar de carregar completamente
-        window.addEventListener('load', initVideos);
-        
-        return () => {
-            window.removeEventListener('load', initVideos);
-        };
-    }, []);
+    //                 // Tenta dar play
+    //                 await video.play();
+    //             } catch (err) {
+    //                 console.log("Autoplay falhou:", err);
+
+    //                 // Fallback: tenta play na primeira interação do usuário
+    //                 const playOnInteraction = () => {
+    //                     video.play().catch(e => console.log("Play após interação falhou:", e));
+    //                     document.removeEventListener('touchstart', playOnInteraction);
+    //                     document.removeEventListener('click', playOnInteraction);
+    //                 };
+
+    //                 document.addEventListener('touchstart', playOnInteraction, { once: true });
+    //                 document.addEventListener('click', playOnInteraction, { once: true });
+    //             }
+    //         }
+    //     };
+
+    //     // Tenta inicializar os vídeos
+    //     initVideos();
+
+    //     // Fallback adicional para quando a página terminar de carregar completamente
+    //     window.addEventListener('load', initVideos);
+
+    //     return () => {
+    //         window.removeEventListener('load', initVideos);
+    //     };
+    // }, []);
 
     return (
         <>
             <Header />
             <section id="hero-fold" className="w-screen bg-black/50 shadow-2xl min-h-screen relative flex items-center justify-center">
-                <video
-                    autoPlay
-                    loop
-                    preload="auto"
-                    muted
-                    playsInline
-                    webkit-playsinline="true"
-                    controlsList="nodownload"
+                <VideoComponent
+                    src="/hero-desktop.mp4"
+                    poster="/poster-video-1.png"
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-                >
-                    <source src="/hero-desktop.mp4" type="video/mp4" />
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
+                />
                 <div className="flex flex-col items-center px-8 lg:scale-130 z-10">
                     <img src="/logo-villa-lobos.png" alt="logo-villa-lobos" className="w-30" />
                     <h1 className="text-7xl whitespace-nowrap text-[#C3973B]">Villa Glow</h1>
@@ -239,40 +232,22 @@ function App() {
             <div id="first-fold" className="min-h-32 bg-[#C3973B] flex flex-col justify-center items-center">
                 <h4 id="text-hero" className="sm:text-2xl text-[#030332] font-bold text-center px-3 py-4 z-50 relative">Um ateliê de pintura neon no escuro para toda a família se divertir e criar lembranças!</h4>
             </div>
-            <section className="overflow-hidden w-screen flex flex-col relative bg-gradient-to-b from-[#030332] to-[#010127]">
-                <div className="relative w-screen min-h-76 pt-12 flex justify-center items-center">
-                    <img src="/10.png" alt="" className="absolute opacity-30" />
-                    <img src="/logo-villa-lobos.png" alt="" className="absolute w-40 top-7 md:top-11" />
-                    <p className="text-md md:text-[21px] max-w-246 text-[#ffffff] text-center px-4 py-12 md:py-8 z-80">Neste Natal, o Shopping Villa Lobos convida você para uma experiência cheia de cor e magia: o Vila Glow – Pintando no Escuro. Entre em um ambiente iluminado por luzes blacklight, vista seu avental e solte a criatividade com tintas neon que brilham no escuro! Crianças e adultos poderão criar suas próprias obras de arte e levar para casa um pedacinho dessa experiência inesquecível</p>
+            <section className="overflow-hidden w-screen min-h-screen flex flex-col relative bg-[#000000]">
+                <VideoComponent
+                    src="/video-menina-desenhando.mp4"
+                    poster="/poster-video-2.png"
+                    className="absolute top-0 left-0 w-full h-full object-cover z-10"
+                />
+                <div className={`hidden lg:flex 2xl:hidden absolute bottom-0 right-0 p-3 w-18 h-18 bg-black items-center justify-center z-20`}>
+                    <img src="/favicon-g.png" alt="Logo Allos" className="w-25 h-auto object-contain" />
                 </div>
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    preload="auto"
-                    playsInline
-                    webkit-playsinline="true"
-                    controlsList="nodownload"
-                    className="translate-y-8"
-                >
-                    <source src="/video-menina-desenhando.mp4" type="video/mp4" />
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
             </section>
-            <section id="second-fold" className="w-screen overflow-hidden h-300 bg-[#C3973B] md:h-250 py-12 md:py-0 relative flex flex-col lg:flex-row justify-center lg:justify-start items-center">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    preload="auto"
-                    playsInline
-                    webkit-playsinline="true"
-                    controlsList="nodownload"
+            <section id="second-fold" className="w-screen overflow-hidden h-300 bg-[#C3973B] md:h-250 py-12 md:py-0 relative flex flex-col lg:flex-row justify-center lg:justify-start items-center"> 
+                <VideoComponent
+                    src="/video-mulher-desenhando.mp4"
+                    poster="/poster-video-3.png"
                     className="relative w-full lg:h-full max-w-md h-160 z-10 object-cover md:ml-0"
-                >
-                    <source src="/foto-mulher-desenhando.mp4" type="video/mp4" />
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
+                />
                 <div className="w-full h-full flex flex-col gap-3 max-w-136 px-4 lg:pt-36 lg:ml-18 pt-10 text-center md:text-start md:px-8 z-50">
                     <h4 className="text-3xl font-bold">20 de novembro</h4>
                     <h4 className="text-3xl font-bold">à 24 de dezembro</h4>
@@ -280,7 +255,7 @@ function App() {
                     <h4 className="text-[18px] md:text-[21px] font-bold">- R$ 130,00 (inteira) / 65,00 (meia entrada)</h4>
                     <h4 className="text-[18px] md:text-[21px] font-bold">- Sujeita à lotação</h4>
                     <h4 className="text-[18px] md:text-[21px] font-bold">- Para todas as idades</h4>
-                    <img src="/6.png" alt="" className="hidden md:block absolute right-0 -top-40" />
+                    <img src="/respingo-azul.png" alt="" className="hidden md:block absolute right-0 -top-40" />
                     <a
                         target="_blank"
                         href="https://www.sympla.com.br/evento/villa-glow-pintando-no-escuro/3187225?_gl=1*1k6tqsb*_gcl_au*OTkwMzcyMzkzLjE3NjEyNTU3NDMuMTQwNzU4MzAwNS4xNzYxMzI4NTE0LjE3NjEzMjg2MDk.*_ga*MTQ5MTg4MDgyOC4xNzYxMjU1NzQ0*_ga_KXH10SQTZF*czE3NjEzMjcwMDMkbzUkZzEkdDE3NjEzMjg5ODMkajI2JGwwJGgxNDY0MTM3ODMz"
@@ -289,22 +264,17 @@ function App() {
                         Quero participar do Villa Glow
                     </a>
                 </div>
-                <div className="w-full h-10 bg-[#030332] absolute bottom-0 z-50"></div>
+                <div className="w-full h-10 bg-[#000000] absolute bottom-0 z-50"></div>
             </section>
             <section id="hero-fold-2" className="w-screen bg-black/50 shadow-2xl min-h-screen relative flex items-center justify-center">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    webkit-playsinline="true"
-                    preload="auto"
-                    controlsList="nodownload"
+                <VideoComponent
+                    src="/video-menino-desenhando.mp4"
+                    poster="/poster-video-4.png"
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-                >
-                    <source src="/video-fold-2.mp4" type="video/mp4" />
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
+                />
+                <div className={`hidden lg:flex xl:hidden absolute bottom-0 right-0 p-2 w-15 h-15 bg-black items-center justify-center z-20`}>
+                    <img src="/favicon-g.png" alt="Logo Allos" className="w-25 h-auto object-contain" />
+                </div>
                 <div className="flex flex-col items-center px-8 lg:scale-130 z-10">
                     <img src="/logo-villa-lobos.png" alt="logo-villa-lobos" className="w-30" />
                     <h1 className="text-7xl whitespace-nowrap text-[#C3973B]">Villa Glow</h1>
