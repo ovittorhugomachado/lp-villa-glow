@@ -47,17 +47,6 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-/* #hero-fold {
-  background-image: url('/bg-first-fold-mobile.png');
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-} */
-
 #text-hero {
   font-size: 25px;
 }
@@ -67,24 +56,3 @@ a:hover {
     font-size: 21px;
   }
 }
-
-/* Breakpoint para telas maiores que 640px */
-/* @media (min-width: 640px) {
-  #hero-fold {
-    background-image: url('/bg-first-fold-tablet.png');
-  }
-}
-
-/* Breakpoint para telas maiores que 1024px */
-/* @media (min-width: 1024px) {
-  #hero-fold {
-    background-image: url('/bg-first-fold-desktop.png');
-  }
-} */
-
-/* Breakpoint para telas maiores que 1440px */
-/* @media (min-width: 1440px) {
-  #hero-fold {
-    background-image: url('/bg-first-fold-large-desktop.png');
-  }
-} */
