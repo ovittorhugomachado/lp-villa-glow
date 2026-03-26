@@ -31,7 +31,7 @@ function App() {
         />
         <a
           target="_blank"
-          href="https://www.sympla.com.br/evento/villa-glow-pintando-no-escuro/3296189"
+          href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
           className="hidden md:block px-8 py-1.5 left-52 top-159 absolute rounded-full text-lg font-semibold mt-0 mb-3 text-[#020321] bg-[#C3973B] text-center"
         >
           Saiba mais
@@ -118,7 +118,7 @@ function App() {
           />
           <a
             target="_blank"
-            href="https://www.sympla.com.br/evento/villa-glow-pintando-no-escuro/3296189"
+            href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
             className="px-3 py-4 rounded-full text-lg font-semibold mt-0 mb-3 text-white bg-[#030332] text-center"
           >
             Quero participar do Villa Glow
@@ -157,7 +157,7 @@ function App() {
           <img src="/images/sublinhado.png" alt="sublinhado" className="w-25" />
           <a
             target="_blank"
-            href="https://www.sympla.com.br/evento/villa-glow-pintando-no-escuro/3296189"
+            href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
             className="px-8 pt-1.5 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-center mt-4"
           >
             Quero participar <br className="md:hidden" /> do Villa Glow
