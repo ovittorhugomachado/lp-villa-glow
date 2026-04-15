@@ -7,7 +7,7 @@ function App() {
       <Header />
       <section
         id="hero-fold"
-        className="w-screen shadow-2xl min-h-screen relative flex items-center justify-center"
+        className="w-screen shadow-2xl min-h-screen relative flex items-center justify-center overflow-hidden bg-[url('/videos/bg-hero.png')] bg-cover bg-center"
       >
         {/* <VideoComponent
           src="/videos/video-hero.mp4"
@@ -19,24 +19,33 @@ function App() {
           poster="/images/poster-hero-desktop.png"
           className="hidden md:block absolute top-0 left-0 w-full h-full -z-10"
         /> */}
-        <img
-          src="/videos/image-hero.jpg"
-          alt="image-hero"
-          className="md:hidden absolute top-10 left-0 w-full h-full -z-10 object-cover object-top"
-        />
-        <img
-          src="/videos/image-hero-desktop.jpg"
-          alt="image-hero"
-          className="hidden md:block absolute top-0 left-0 w-full h-full -z-10 object-cover object-left"
-        />
-        <a
+        {/* <a
           target="_blank"
           href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
-          className="hidden md:block px-8 py-1.5 left-52 top-159 absolute rounded-full text-lg font-semibold mt-0 mb-3 text-[#020321] bg-[#C3973B] text-center"
+          className="absolute left-52 top-159 z-20 hidden rounded-full bg-[#C3973B] px-8 py-1.5 text-center text-lg font-semibold text-[#020321] md:block"
         >
           Saiba mais
-        </a>
-        <div className="flex flex-col items-center px-8 lg:scale-130 z-10">
+        </a> */}
+        <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-6 pt-24 pb-32 md:pt-24">
+          <div className="flex w-full max-w-9xl flex-col items-center justify-center gap-5 md:mx-18 md:flex-row md:justify-between md:gap-10">
+            <img
+              src="/videos/titulo.png"
+              alt="Villa Glow"
+              className="w-full max-w-[320px] object-contain sm:max-w-[420px] md:w-[45%] md:max-w-110"
+            />
+            <div className="flex-2 w-full h-full flex items-center justify-center gap-4">
+              <img
+                src="/videos/imagem-dinossauro.png"
+                alt="Dinossauro"
+                className="w-full max-w-[340px] flex-2 object-contain sm:max-w-[460px] md:w-[95%] md:max-w-115 lg:translate-y-14 xl:translate-y-18"
+              />
+            </div>
+          </div>
+          <img
+            src="/videos/logo-limao.png"
+            alt="Logo Limao"
+            className="absolute left-8 bottom-0 w-20"
+          />
           {/* <img src="/images/logo-villa-lobos.png" alt="logo-villa-lobos" className="w-30" />
                     <h1 className="text-7xl whitespace-nowrap text-[#C3973B]">Villa Glow</h1>
                     <h4 className="text-white text-2xl">Pintando no escuro</h4>
