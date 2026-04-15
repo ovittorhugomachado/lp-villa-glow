@@ -31,7 +31,7 @@ function App() {
         />
         <a
           target="_blank"
-          href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
+          href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
           className="hidden md:block px-8 py-1.5 left-52 top-159 absolute rounded-full text-lg font-semibold mt-0 mb-3 text-[#020321] bg-[#C3973B] text-center"
         >
           Saiba mais
@@ -118,7 +118,7 @@ function App() {
           />
           <a
             target="_blank"
-            href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
+            href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
             className="px-3 py-4 rounded-full text-lg font-semibold mt-0 mb-3 text-white bg-[#030332] text-center"
           >
             Quero participar do Villa Glow
@@ -157,7 +157,7 @@ function App() {
           <img src="/images/sublinhado.png" alt="sublinhado" className="w-25" />
           <a
             target="_blank"
-            href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
+            href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
             className="px-8 pt-1.5 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-center mt-4"
           >
             Quero participar <br className="md:hidden" /> do Villa Glow

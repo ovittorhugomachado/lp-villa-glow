@@ -27,7 +27,7 @@ export const Header = () => {
       <div className="flex items-center gap-2">
         <a
           target="_blank"
-          href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
+          href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
           className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-bartex"
         >
           Ingressos
@@ -77,7 +77,7 @@ export const Header = () => {
         </button>
         <a
           target="_blank"
-          href="https://www.ingresso.com/evento/villa-glow-pintando-no-escuro"
+          href="https://olhaoingresso.showare.com.br/Default.aspx?display=cards&filter=dayofweek&eventid=1959&websaleschannelkey=influencerll&sw_sc=influencerll&trk_eventId=1959&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKFHkuz9MSrwLWYStCwwhGKP_TDKgU2gwBycPLPpC2Drjk9rqWD45KdjxMOY_aem_FrYP_uB0sQB1xEjy8e7xxA&utm_id=97760_v0_s00_e0_tv3_a1denni2tfbnal"
           className="px-5 pt-1 pb-1.5 rounded-full text-lg font-semibold text-[#030332] bg-[#C3973B] text-bartex"
         >
           Ingressos
